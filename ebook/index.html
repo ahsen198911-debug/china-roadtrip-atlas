@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>全国自驾路书合订本 · 13 条经典线路逐日路书</title>
+<meta name="description" content="13 条经典自驾线路，逐日里程、海拔高点、住宿城镇、加油限行门票提醒。一次整理，离线随时查。">
+<style>
+:root{--fg:#1a1a1a;--muted:#6b7280;--accent:#b45309;--line:#e5e7eb;--card:#fff;--bg:#fff;--soft:#fffbf5}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;color:var(--fg);background:var(--bg);max-width:820px;margin:0 auto;padding:40px 22px 72px;-webkit-font-smoothing:antialiased}
+h1{font-size:31px;line-height:1.3;letter-spacing:-.01em}
+.sub{color:var(--muted);margin-top:10px;font-size:15px}
+.tags{margin:18px 0 26px}
+.tags span{display:inline-block;font-size:12.5px;color:#92400e;background:var(--soft);border:1px solid #fde6c4;border-radius:99px;padding:3px 11px;margin:0 6px 6px 0}
+h2{font-size:21px;margin:40px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--line)}
+p{margin:10px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:16px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin:16px 0}
+.rt{border:1px solid var(--line);border-radius:10px;padding:13px 15px}
+.rt b{display:block;font-size:15px;margin-bottom:5px}
+.rt i{font-style:normal;font-size:13px;color:var(--muted)}
+ul{margin:8px 0 8px 4px;list-style:none}
+ul li{padding-left:22px;position:relative;margin:7px 0;font-size:15px}
+ul li:before{content:"\2713";position:absolute;left:0;color:var(--accent);font-weight:700}
+.price{font-size:44px;font-weight:700;color:var(--accent);letter-spacing:-.02em}
+.price small{font-size:16px;font-weight:400;color:var(--muted);text-decoration:line-through;margin-left:10px}
+.buy{display:block;width:100%;margin-top:16px;padding:15px;border-radius:10px;border:none;background:var(--accent);color:#fff;font-size:17px;font-weight:600;cursor:pointer;text-align:center;text-decoration:none;font-family:inherit}
+.buy:hover{background:#92400e}
+.note{font-size:13.5px;color:var(--muted);margin-top:12px;line-height:1.6}
+.pay{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0}
+.pay figure{margin:0;text-align:center}
+.pay img{width:150px;height:150px;object-fit:contain;border:1px solid var(--line);border-radius:10px;padding:8px}
+.pay figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+.fine{font-size:13px;color:var(--muted);border-left:3px solid var(--line);padding-left:14px;margin:16px 0}
+.qr-box{display:none;margin-top:14px;padding-top:14px;border-top:1px dashed var(--line)}
+details{margin:10px 0;border:1px solid var(--line);border-radius:10px;padding:12px 16px}
+summary{cursor:pointer;font-weight:600;font-size:15px}
+summary::-webkit-details-marker{color:var(--accent)}
+details p{font-size:14.5px;color:#374151}
+@media(max-width:600px){.pay{grid-template-columns:1fr}h1{font-size:26px}}
+</style>
+</head>
+<body>
+
+<h1>全国自驾路书合订本</h1>
+<p class="sub">13 条经典线路 <span id="ndays">85</span> 天逐日行程 · PDF 离线可查 · 一次整理长期可用</p>
+<div class="tags"><span>逐日里程 / 车程</span><span>当日海拔高点</span><span>住宿城镇建议</span><span>加油 / 限行 / 门票提醒</span><span>避坑提示</span></div>
+
+<div class="card" style="border-color:#f0c88a;background:var(--soft)">
+  <div class="price"><span id="p1">39</span> 元<small>原价 99 元</small></div>
+  <p class="note">包含全部 13 条线路的逐日路书 PDF（约 17 页 A4），付款后自动发送下载链接。</p>
+  <a class="buy" href="#" id="buyBtn">立即购买 ¥<span id="p2">39</span></a>
+  <div class="qr-box" id="qrBox">
+    <p style="text-align:center;font-weight:600;margin-bottom:6px">扫码支付 ¥39，支付截图发到下面的邮箱即可获取下载链接</p>
+    <div class="pay">
+      <figure><img src="../assets/pay/wechat-pay.jpg" alt="微信收款码"><figcaption>微信扫码付款</figcaption></figure>
+      <figure><img src="../assets/pay/wechat-add.jpg" alt="加微信好友码"><figcaption>或加微信直接发文件</figcaption></figure>
+    </div>
+    <p class="note" style="text-align:center">付款邮箱：<b style="color:#1a1a1a">roadtrip-atlas@outlook.com</b>（自动回复，无需等待）<br>发送主题：<code>购买路书 + 付款截图</code></p>
+  </div>
+</div>
+
+<h2>你会得到什么</h2>
+<div class="card">
+<ul>
+  <li><b>13 条线路逐日拆解</b>：每天走哪段、约多少公里、开几小时、住哪个城镇</li>
+  <li><b>海拔高点</b>：哪一天过山口、海拔多高、要不要备氧气和高反药</li>
+  <li><b>实操提醒</b>：加油节点、限行时段、预约门票、边防证办理</li>
+  <li><b>避坑清单</b>：把常见的时段错配、路线绕远提前标出来</li>
+  <li><b>PDF 离线格式</b>：进山没信号也能查，可打印放车里</li>
+</ul>
+</div>
+
+<h2>收录线路</h2>
+<div class="grid"><div class="rt"><b>宁夏精品环线</b><i>西北 · 6-7 天</i><i style="display:block;margin-top:3px">约 1400km</i><i style="display:block;color:#b45309">逐日 7 天</i></div>
+<div class="rt"><b>中卫微环线</b><i>西北 · 3 天</i><i style="display:block;margin-top:3px">约 400km</i><i style="display:block;color:#b45309">逐日 3 天</i></div>
+<div class="rt"><b>宁夏 + 内蒙西部全景长线</b><i>西北 · 14-15 天</i><i style="display:block;margin-top:3px">—</i><i style="display:block;color:#b45309">逐日 整理中</i></div>
+<div class="rt"><b>青甘大环线</b><i>西北 · 7-9 天</i><i style="display:block;margin-top:3px">约 2800km (含小环线约 4300km)</i><i style="display:block;color:#b45309">逐日 8 天</i></div>
+<div class="rt"><b>河西走廊单线</b><i>西北 · 4-6 天</i><i style="display:block;margin-top:3px">—</i><i style="display:block;color:#b45309">逐日 6 天</i></div>
+<div class="rt"><b>独库公路</b><i>西北 · 5-7 天</i><i style="display:block;margin-top:3px">561km</i><i style="display:block;color:#b45309">逐日 6 天</i></div>
+<div class="rt"><b>甘南环线</b><i>西北 · 4-6 天</i><i style="display:block;margin-top:3px">约 1800km</i><i style="display:block;color:#b45309">逐日 5 天</i></div>
+<div class="rt"><b>川西大环线</b><i>西南 · 7-10 天</i><i style="display:block;margin-top:3px">约 3300km</i><i style="display:block;color:#b45309">逐日 9 天</i></div>
+<div class="rt"><b>川进青出（318 主线）</b><i>西南 · 10-15 天</i><i style="display:block;margin-top:3px">约 2200km (成都→拉萨)</i><i style="display:block;color:#b45309">逐日 13 天</i></div>
+<div class="rt"><b>川进青出 + 阿里大环线</b><i>西南 · 30 天</i><i style="display:block;margin-top:3px">约 10000km</i><i style="display:block;color:#b45309">逐日 整理中</i></div>
+<div class="rt"><b>新疆大环线</b><i>西北 · 45 天</i><i style="display:block;margin-top:3px">约 12000km</i><i style="display:block;color:#b45309">逐日 整理中</i></div>
+<div class="rt"><b>云南大环线</b><i>西南 · 21 天</i><i style="display:block;margin-top:3px">约 4500km</i><i style="display:block;color:#b45309">逐日 21 天</i></div>
+<div class="rt"><b>呼伦贝尔环线</b><i>华北 · 5-7 天</i><i style="display:block;margin-top:3px">—</i><i style="display:block;color:#b45309">逐日 7 天</i></div></div>
+
+<h2>适合谁</h2>
+<div class="card"><ul>
+  <li>准备自驾去西北、西南，想自己排行程的人</li>
+  <li>嫌攻略分散在十几个 App 里，想一次查完的人</li>
+  <li>需要一份能打印放车上的纸质备份的人</li>
+</ul></div>
+
+<h2>这些线路长什么样</h2>
+<div class="card"><b style="display:block;margin-bottom:10px">%s（前 4 天样例）</b><div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px"><thead><tr style="background:#fffbf5;text-align:left"><th style="padding:8px 10px;border:1px solid #e5e7eb">日程</th><th style="padding:8px 10px;border:1px solid #e5e7eb">路线</th><th style="padding:8px 10px;border:1px solid #e5e7eb">里程</th><th style="padding:8px 10px;border:1px solid #e5e7eb">高点海拔</th><th style="padding:8px 10px;border:1px solid #e5e7eb">住宿</th></tr></thead><tbody><tr><td>第1天</td><td>镇北堡西部影城 · 西夏王陵 · 贺兰山岩画</td><td>—</td><td>—</td><td>银川</td></tr><tr><td>第2天</td><td>览山公园 · 水洞沟</td><td>—</td><td>—</td><td>银川</td></tr><tr><td>第3天</td><td>青铜峡黄河大峡谷 · 同心清真大寺</td><td>—</td><td>—</td><td>同心</td></tr><tr><td>第4天</td><td>须弥山石窟 · 六盘山国家森林公园</td><td>—</td><td>—</td><td>固原</td></tr></tbody></table></div></div>
+<div class="card"><b style="display:block;margin-bottom:10px">%s（前 4 天样例）</b><div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px"><thead><tr style="background:#fffbf5;text-align:left"><th style="padding:8px 10px;border:1px solid #e5e7eb">日程</th><th style="padding:8px 10px;border:1px solid #e5e7eb">路线</th><th style="padding:8px 10px;border:1px solid #e5e7eb">里程</th><th style="padding:8px 10px;border:1px solid #e5e7eb">高点海拔</th><th style="padding:8px 10px;border:1px solid #e5e7eb">住宿</th></tr></thead><tbody><tr><td>第1天</td><td>各地 → 西宁（采购物资）</td><td>—</td><td>2260m</td><td>西宁</td></tr><tr><td>第2天</td><td>西宁 → 青海湖（黑马河段）→ 茶卡盐湖（天空壹号）</td><td>—</td><td>3100m</td><td>茶卡镇</td></tr><tr><td>第3天</td><td>茶卡 → 柴达木戈壁公路 → 察尔汗盐湖 → 格尔木</td><td>—</td><td>2780m</td><td>格尔木</td></tr><tr><td>第4天</td><td>格尔木 → G315 U 型公路 → 水上雅丹 → 南八仙雅丹 → 大柴旦</td><td>—</td><td>2700–3000m</td><td>大柴旦</td></tr></tbody></table></div></div>
+<div class="card"><b style="display:block;margin-bottom:10px">%s（前 4 天样例）</b><div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px"><thead><tr style="background:#fffbf5;text-align:left"><th style="padding:8px 10px;border:1px solid #e5e7eb">日程</th><th style="padding:8px 10px;border:1px solid #e5e7eb">路线</th><th style="padding:8px 10px;border:1px solid #e5e7eb">里程</th><th style="padding:8px 10px;border:1px solid #e5e7eb">高点海拔</th><th style="padding:8px 10px;border:1px solid #e5e7eb">住宿</th></tr></thead><tbody><tr><td>第1天</td><td>独山子 → 独山子大峡谷 → 哈希勒根达坂 → 乔尔玛</td><td>约130km</td><td>约3400m</td><td>乔尔玛</td></tr><tr><td>第2天</td><td>乔尔玛 → 玉希莫勒盖达坂 → 那拉提</td><td>约80km</td><td>约3400m</td><td>那拉提</td></tr><tr><td>第3天</td><td>那拉提 → 空中草原/河谷草原 → 那拉提</td><td>约40km</td><td>约2000m〔需核实〕</td><td>那拉提</td></tr><tr><td>第4天</td><td>那拉提 → 拉尔墩达坂 → 巴音布鲁克</td><td>约90km</td><td>约2700m</td><td>巴音布鲁克</td></tr></tbody></table></div></div>
+<div class="card"><b style="display:block;margin-bottom:10px">%s（前 4 天样例）</b><div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px"><thead><tr style="background:#fffbf5;text-align:left"><th style="padding:8px 10px;border:1px solid #e5e7eb">日程</th><th style="padding:8px 10px;border:1px solid #e5e7eb">路线</th><th style="padding:8px 10px;border:1px solid #e5e7eb">里程</th><th style="padding:8px 10px;border:1px solid #e5e7eb">高点海拔</th><th style="padding:8px 10px;border:1px solid #e5e7eb">住宿</th></tr></thead><tbody><tr><td>第1天</td><td>成都 → 映秀 → 卧龙 → 四姑娘山（日隆镇）</td><td>约175km</td><td>约3850m</td><td>四姑娘山镇</td></tr><tr><td>第2天</td><td>四姑娘山 → 小金 → 丹巴</td><td>约115km</td><td>约3200m</td><td>丹巴</td></tr><tr><td>第3天</td><td>丹巴 → 八美 → 塔公 → 新都桥</td><td>约170km</td><td>约3750m</td><td>新都桥</td></tr><tr><td>第4天</td><td>新都桥 → 雅江 → 理塘 → 稻城</td><td>约340km</td><td>约4718m</td><td>稻城</td></tr></tbody></table></div></div>
+
+<details><summary>数据来源与准确性说明</summary><p>
+里程、海拔、住宿城镇等整理自公开旅游资料与地方政府公开信息，取公开资料常见参考值。
+出行当日请以导航、官方公告与实地路况为准；文中标注〔需核实〕处请自行再确认。
+本书是行程资料汇编，不构成包车、旅行社或任何商业旅行服务报价。
+</p></details>
+
+<details><summary>付完款怎么拿到文件？</summary><p>
+点击「立即购买」扫码支付 <b>¥39</b>，然后把付款截图发到 <b>roadtrip-atlas@outlook.com</b>，
+主题写「购买路书」。自动系统核对后会把 PDF 下载链接回给你，通常几分钟内。
+也可以直接扫右边的好友码加微信，我手动发你。
+</p></details>
+
+<details><summary>可以退款吗？</summary><p>
+数字商品一经发送下载链接即视为交付完成，原则上不支持退款。
+购买前请先看上面「收录线路」和线路样例，确认内容符合你的需要再付。
+仍不确定的话，加微信先问我。
+</p></details>
+
+<p class="fine">本页与 PDF 内容整理自公开资料，如认为其中有不当之处请联系我们更正。</p>
+
+<script>
+var B = document.getElementById('buyBtn'), Q = document.getElementById('qrBox');
+B.addEventListener('click', function(e){ e.preventDefault(); Q.style.display = 'block'; B.textContent = '已展开支付方式'; B.style.background = '#92400e'; Q.scrollIntoView({behavior:'smooth', block:'center'}); });
+</script>
+</body>
+</html>
