@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ahsen198911-debug.github.io/china-roadtrip-atlas/sitemap.xml
