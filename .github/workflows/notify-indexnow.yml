@@ -1,0 +1,17 @@
+name: notify-search-engines
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+permissions:
+  contents: read
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Wait for Pages deploy
+        run: sleep 60
+      - name: Submit sitemap to IndexNow + Wayback
+        run: python3 .github/scripts/notify_indexnow.py --site https://ahsen198911-debug.github.io/china-roadtrip-atlas --repo-dir .
