@@ -17,6 +17,7 @@ nav a:hover{color:var(--fg)}
 .cta{display:inline-block;background:var(--acc);color:#fff;padding:12px 28px;border-radius:6px;font-weight:600}
 .cta:hover{background:#c94545}
 .cta.alt{background:transparent;border:1px solid var(--line);color:var(--fg);margin-left:10px}
+.cta.big{padding:15px 34px;font-size:16px}
 .stats{display:flex;gap:26px;justify-content:center;margin:34px 0 10px;flex-wrap:wrap}
 .stat{text-align:center}
 .stat b{display:block;font-size:24px;color:var(--acc2)}
