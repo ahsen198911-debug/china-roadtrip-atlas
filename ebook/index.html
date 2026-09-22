@@ -50,14 +50,14 @@ details p{font-size:14.5px;color:#374151}
 <div class="card" style="border-color:#f0c88a;background:var(--soft)">
   <div class="price"><span id="p1">39</span> 元<small>原价 99 元</small></div>
   <p class="note">包含全部 13 条线路的逐日路书 PDF（约 17 页 A4），付款后自动发送下载链接。</p>
-  <a class="buy" href="#" id="buyBtn">立即购买 ¥<span id="p2">39</span></a>
+  <a class="buy" id="buyBtn" href="https://github.com/ahsen198911-debug/china-roadtrip-atlas/issues/new?title=%E8%B4%AD%E4%B9%B0%EF%BC%9A%E5%85%A8%E5%9B%BD%E8%87%AA%E9%A9%BE%E8%B7%AF%E4%B9%A6%E5%90%88%E8%AE%A2%E6%9C%AC&labels=inquiry&body=%E8%AF%B7%E5%A1%AB%E5%86%99%EF%BC%9A%0A-%20%E5%87%BA%E8%A1%8C%E6%97%A5%E6%9C%9F%EF%BC%9A%0A-%20%E4%BA%BA%E6%95%B0%EF%BC%9A%0A-%20%E5%87%BA%E5%8F%91%E5%9C%B0%EF%BC%9A%0A-%20%E9%80%82%E7%94%A8%E7%BA%BF%E8%B7%AF%EF%BC%9A%0A-%20%E5%A4%87%E6%B3%A8%EF%BC%9A%E6%83%B3%E4%B9%B0%E8%B7%AF%E4%B9%A6%E5%90%88%E8%AE%A2%E6%9C%AC">立即购买 ¥<span id="p2">39</span></a>
   <div class="qr-box" id="qrBox">
-    <p style="text-align:center;font-weight:600;margin-bottom:6px">扫码支付 ¥39，支付截图发到下面的邮箱即可获取下载链接</p>
+    <p style="text-align:center;font-weight:600;margin-bottom:6px">扫码支付 ¥<span class="cur-price">39</span>，然后在询盘帖里回复「已付款」即可自动收到下载链接</p>
     <div class="pay">
       <figure><img src="../assets/pay/wechat-pay.jpg" alt="微信收款码"><figcaption>微信扫码付款</figcaption></figure>
       <figure><img src="../assets/pay/wechat-add.jpg" alt="加微信好友码"><figcaption>或加微信直接发文件</figcaption></figure>
     </div>
-    <p class="note" style="text-align:center">付款邮箱：<b style="color:#1a1a1a">roadtrip-atlas@outlook.com</b>（自动回复，无需等待）<br>发送主题：<code>购买路书 + 付款截图</code></p>
+    <p class="note" style="text-align:center">没注册过询盘帖？点上面的「立即购买」后，页面会引导你发起一个订单帖，回复「已付款」系统自动发文件。</p>
   </div>
 </div>
 
@@ -107,9 +107,9 @@ details p{font-size:14.5px;color:#374151}
 </p></details>
 
 <details><summary>付完款怎么拿到文件？</summary><p>
-点击「立即购买」扫码支付 <b>¥39</b>，然后把付款截图发到 <b>roadtrip-atlas@outlook.com</b>，
-主题写「购买路书」。自动系统核对后会把 PDF 下载链接回给你，通常几分钟内。
-也可以直接扫右边的好友码加微信，我手动发你。
+点击「立即购买」扫码支付 <b>¥39</b>，然后在你提交的订单帖里回复一句「已付款」。
+系统会自动把 PDF 下载链接回给你，通常几秒钟内。
+也可以直接扫好友码加微信，我手动发你。
 </p></details>
 
 <details><summary>可以退款吗？</summary><p>
@@ -121,8 +121,12 @@ details p{font-size:14.5px;color:#374151}
 <p class="fine">本页与 PDF 内容整理自公开资料，如认为其中有不当之处请联系我们更正。</p>
 
 <script>
+// 「立即购买」已直接指向预填订单帖；这里补一个备选：点不开新窗口时原地展示收款码
 var B = document.getElementById('buyBtn'), Q = document.getElementById('qrBox');
-B.addEventListener('click', function(e){ e.preventDefault(); Q.style.display = 'block'; B.textContent = '已展开支付方式'; B.style.background = '#92400e'; Q.scrollIntoView({behavior:'smooth', block:'center'}); });
+B.addEventListener('click', function(e){
+  if (e.metaKey || e.ctrlKey) return;          // 新标签页打开，正常跳转
+  setTimeout(function(){ if (document.visibilityState === 'visible') { Q.style.display='block'; Q.scrollIntoView({behavior:'smooth', block:'center'}); } }, 400);
+});
 </script>
 </body>
 </html>
